@@ -1,7 +1,7 @@
 park as park
 -
 park_id PK VARCHAR
-full_name VARCHAR
+park_name VARCHAR
 park_url VARCHAR
 park_code VARCHAR
 description VARCHAR
@@ -44,22 +44,25 @@ fire
 fire_id int PK
 park_id VARCHAR FK >- park.park_id
 fire_name VARCHAR
-nwcg_reporting_agency VARCHAR
-nwcg_reporting_unit_name VARCHAR
+park_agency VARCHAR
+park_name VARCHAR
 fire_year int
-stat_cause_descr VARCHAR
+cause_description VARCHAR
 fire_size DEC
 fire_size_class VARCHAR
 latitude DEC
 longitude DEC
 state VARCHAR
 
+sci_name as sci_name
+-
+scientific_name_id PK int
+scientific_name VARCHAR
 
 park_species
 -
-scientific_name_id PK int
-park_id VARCHAR FK >- park.park_id
-scientific_name VARCHAR
+scientific_name_id int PK FK >- sci_name.scientific_name_id
+park_id VARCHAR PK FK >- park.park_id
 category_name VARCHAR
 family VARCHAR 
 order VARCHAR
