@@ -56,12 +56,12 @@ state VARCHAR
 
 sci_name as sci_name
 -
-scientific_name_id PK int
-scientific_name VARCHAR
+sci_name_id PK int
+sci_name VARCHAR
 
 park_species
 -
-scientific_name_id int PK FK >- sci_name.scientific_name_id
+sci_name_id int PK FK >- sci_name.sci_name_id
 park_id VARCHAR PK FK >- park.park_id
 category_name VARCHAR
 family VARCHAR 
