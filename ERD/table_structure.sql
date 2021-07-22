@@ -3,7 +3,6 @@ park as park
 park_id PK VARCHAR
 full_name VARCHAR
 park_url VARCHAR
-webcam_url VARCHAR
 park_code VARCHAR
 description VARCHAR
 latitude DEC
@@ -12,13 +11,14 @@ states VARCHAR
 directions_info VARCHAR
 directions_url VARCHAR
 weather_info VARCHAR
+designation VARCHAR
 
 activity as activity
 -
 activity_id PK VARCHAR 
 activity_name VARCHAR 
 
-fees as entrance_fees
+fees as fees
 -
 fee_id PK int
 fee BOOLEAN
@@ -41,12 +41,12 @@ image_caption VARCHAR
 
 fire 
 -
-fire_id VARCHAR PK
+fire_id int PK
 park_id VARCHAR FK >- park.park_id
 fire_name VARCHAR
 nwcg_reporting_agency VARCHAR
 nwcg_reporting_unit_name VARCHAR
-fire_year VARCHAR
+fire_year int
 stat_cause_descr VARCHAR
 fire_size DEC
 fire_size_class VARCHAR
@@ -55,9 +55,9 @@ longitude DEC
 state VARCHAR
 
 
-park_species 
+park_species
 -
-scientific_name_id PK VARCHAR
+scientific_name_id PK int
 park_id VARCHAR FK >- park.park_id
 scientific_name VARCHAR
 category_name VARCHAR

@@ -7,7 +7,6 @@ CREATE TABLE "park" (
     "park_id" VARCHAR   NOT NULL,
     "full_name" VARCHAR   NOT NULL,
     "park_url" VARCHAR   NOT NULL,
-    "webcam_url" VARCHAR   NOT NULL,
     "park_code" VARCHAR   NOT NULL,
     "description" VARCHAR   NOT NULL,
     "latitude" DEC   NOT NULL,
@@ -16,6 +15,7 @@ CREATE TABLE "park" (
     "directions_info" VARCHAR   NOT NULL,
     "directions_url" VARCHAR   NOT NULL,
     "weather_info" VARCHAR   NOT NULL,
+    "designation" VARCHAR   NOT NULL,
     CONSTRAINT "pk_park" PRIMARY KEY (
         "park_id"
      )
