@@ -13,22 +13,29 @@ directions_info VARCHAR
 directions_url VARCHAR
 weather_info VARCHAR
 
-activities as activities
+activity as activity
 -
-activities_id pk VARCHAR 
-activities_name VARCHAR 
+activity_id PK VARCHAR 
+activity_name VARCHAR 
 
 fees as entrance_fees
 -
 fee_id PK int
 fee BOOLEAN
 
+webcam_url 
+-
+webcam_id int PK 
+park_id VARCHAR FK >- park.park_id
+park_webcam_url VARCHAR
+webcam_title VARCHAR
+webcam_description VARCHAR
 
 images 
 -
 image_id int PK 
 park_id VARCHAR FK >- park.park_id
-credit VARCHAR
+image_credit VARCHAR
 image_url VARCHAR
 image_caption VARCHAR
 
@@ -48,7 +55,7 @@ longitude DEC
 state VARCHAR
 
 
-park_species as park_species
+park_species 
 -
 scientific_name_id PK VARCHAR
 park_id VARCHAR FK >- park.park_id
@@ -62,7 +69,7 @@ common_names VARCHAR
 park_activities 
 -
 park_id VARCHAR PK FK >- park.park_id
-activities_id VARCHAR PK FK >- activities.activities_id
+activity_id VARCHAR PK FK >- activity.activity_id
 
 park_fee 
 -
