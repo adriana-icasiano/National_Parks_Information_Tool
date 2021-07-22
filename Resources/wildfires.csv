@@ -1,4 +1,4 @@
-FIRE ID,NWCG REPORTING AGENCY,NWCG REPORTING UNIT NAME,FIRE NAME,FIRE YEAR,STAT CAUSE DESCR,FIRE SIZE,FIRE SIZE CLASS,LATITUDE,LONGITUDE,STATE
+fire_id,park_agency,park_name,fire_name,fire_year,cause_description,fire_size,fire_size_class,latitude,longitude,state
 238468,NPS,Denali National Park & Preserve,MOOSE CRK1,1993,Lightning,11249.0,G,63.6828,-151.0856,AK
 238469,NPS,Denali National Park & Preserve,TOLKAT RV,1993,Lightning,3554.0,F,63.9162,-150.119,AK
 238470,NPS,Denali National Park & Preserve,KANTISHNA,1996,Miscellaneous,1.0,B,63.5242,-150.9612,AK
