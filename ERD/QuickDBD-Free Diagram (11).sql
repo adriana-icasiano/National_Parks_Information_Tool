@@ -5,7 +5,7 @@
 
 CREATE TABLE "park" (
     "park_id" VARCHAR   NOT NULL,
-    "full_name" VARCHAR   NOT NULL,
+    "park_name" VARCHAR   NOT NULL,
     "park_url" VARCHAR   NOT NULL,
     "park_code" VARCHAR   NOT NULL,
     "description" VARCHAR   NOT NULL,
@@ -63,10 +63,10 @@ CREATE TABLE "fire" (
     "fire_id" int   NOT NULL,
     "park_id" VARCHAR   NOT NULL,
     "fire_name" VARCHAR   NOT NULL,
-    "nwcg_reporting_agency" VARCHAR   NOT NULL,
-    "nwcg_reporting_unit_name" VARCHAR   NOT NULL,
+    "park_agency" VARCHAR   NOT NULL,
+    "park_name" VARCHAR   NOT NULL,
     "fire_year" int   NOT NULL,
-    "stat_cause_descr" VARCHAR   NOT NULL,
+    "cause_description" VARCHAR   NOT NULL,
     "fire_size" DEC   NOT NULL,
     "fire_size_class" VARCHAR   NOT NULL,
     "latitude" DEC   NOT NULL,
@@ -77,16 +77,23 @@ CREATE TABLE "fire" (
      )
 );
 
+CREATE TABLE "sci_name" (
+    "sci_name_id" int   NOT NULL,
+    "sci_name" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_sci_name" PRIMARY KEY (
+        "sci_name_id"
+     )
+);
+
 CREATE TABLE "park_species" (
-    "scientific_name_id" int   NOT NULL,
+    "sci_name_id" int   NOT NULL,
     "park_id" VARCHAR   NOT NULL,
-    "scientific_name" VARCHAR   NOT NULL,
     "category_name" VARCHAR   NOT NULL,
     "family" VARCHAR   NOT NULL,
     "order" VARCHAR   NOT NULL,
     "common_names" VARCHAR   NOT NULL,
     CONSTRAINT "pk_park_species" PRIMARY KEY (
-        "scientific_name_id"
+        "sci_name_id","park_id"
      )
 );
 
@@ -114,6 +121,9 @@ REFERENCES "park" ("park_id");
 
 ALTER TABLE "fire" ADD CONSTRAINT "fk_fire_park_id" FOREIGN KEY("park_id")
 REFERENCES "park" ("park_id");
+
+ALTER TABLE "park_species" ADD CONSTRAINT "fk_park_species_sci_name_id" FOREIGN KEY("sci_name_id")
+REFERENCES "sci_name" ("sci_name_id");
 
 ALTER TABLE "park_species" ADD CONSTRAINT "fk_park_species_park_id" FOREIGN KEY("park_id")
 REFERENCES "park" ("park_id");
