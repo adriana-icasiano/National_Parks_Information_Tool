@@ -5,8 +5,8 @@ park_name VARCHAR
 park_url VARCHAR
 park_code VARCHAR
 description VARCHAR
-latitude DEC
-longitude DEC
+latitude DECIMAL
+longitude DECIMAL
 states VARCHAR
 directions_info VARCHAR
 directions_url VARCHAR
@@ -16,7 +16,7 @@ designation VARCHAR
 activity as activity
 -
 activity_id PK VARCHAR 
-activity_name VARCHAR 
+activity_name PK VARCHAR 
 
 fees as fees
 -
@@ -34,24 +34,25 @@ webcam_description VARCHAR
 images 
 -
 image_id int PK 
-park_id VARCHAR FK >- park.park_id
 image_credit VARCHAR
-image_url VARCHAR
 image_caption VARCHAR
+image_url VARCHAR
+park_id VARCHAR FK >- park.park_id
+
 
 fire 
 -
 fire_id int PK
 park_id VARCHAR FK >- park.park_id
-fire_name VARCHAR
 park_agency VARCHAR
 park_name VARCHAR
+fire_name VARCHAR
 fire_year int
 cause_description VARCHAR
-fire_size DEC
+fire_size DECIMAL
 fire_size_class VARCHAR
-latitude DEC
-longitude DEC
+latitude DECIMAL
+longitude DECIMAL
 state VARCHAR
 
 sci_name as sci_name
@@ -71,8 +72,10 @@ common_names VARCHAR
 
 park_activities 
 -
-park_id VARCHAR PK FK >- park.park_id
-activity_id VARCHAR PK FK >- activity.activity_id
+activity_id VARCHAR FK >- activity.activity_id
+activity_name VARCHAR FK >- activity.activity_name
+park_id VARCHAR FK >- park.park_id
+
 
 park_fee 
 -
