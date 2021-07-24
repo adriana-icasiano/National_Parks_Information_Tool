@@ -4647,7 +4647,7 @@ sci_name_id,park_id,category_name,family,order,common_names
 4645,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Anatidae,Anseriformes,Common Merganser
 4646,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Anatidae,Anseriformes,Red-Breasted Merganser
 4647,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Anatidae,Anseriformes,Ruddy Duck
-4648,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,,Apodiformes,Calliope Hummingbird
+4648,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Not Available,Apodiformes,Calliope Hummingbird
 4649,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Apodidae,Apodiformes,White-Throated Swift
 4650,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Apodidae,Apodiformes,Chimney Swift
 4651,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Apodidae,Apodiformes,Vaux's Swift
@@ -4737,9 +4737,9 @@ sci_name_id,park_id,category_name,family,order,common_names
 4735,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Rallidae,Gruiformes,Purple Gallinule
 4736,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Rallidae,Gruiformes,Sora
 4737,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Rallidae,Gruiformes,Virginia Rail
-4738,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,,Passeriformes,House Finch
-4739,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,,Passeriformes,Purple Finch
-4740,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,,Passeriformes,Mccown's Longspur
+4738,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Not Available,Passeriformes,House Finch
+4739,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Not Available,Passeriformes,Purple Finch
+4740,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Not Available,Passeriformes,Mccown's Longspur
 4741,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Aegithalidae,Passeriformes,Bushtit
 4742,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Alaudidae,Passeriformes,Horned Lark
 4743,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Bombycillidae,Passeriformes,Cedar Waxwing
@@ -4972,7 +4972,7 @@ sci_name_id,park_id,category_name,family,order,common_names
 4970,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Podicipedidae,Podicipediformes,Red-Necked Grebe
 4971,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Podicipedidae,Podicipediformes,Eared Grebe
 4972,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Podicipedidae,Podicipediformes,Pied-Billed Grebe
-4973,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,,Strigiformes,Flammulated Owl
+4973,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Not Available,Strigiformes,Flammulated Owl
 4974,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Strigidae,Strigiformes,"Northern Saw-Whet Owl, Saw-Whet Owl"
 4975,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Strigidae,Strigiformes,Short-Eared Owl
 4976,FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD,Bird,Strigidae,Strigiformes,Long-Eared Owl
@@ -9447,12 +9447,12 @@ DRTO-1260,Dry Tortugas National Park,Bird,Passeriformes,Vireonidae,Vireo solitar
 9434,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Bird,Strigidae,Strigiformes,Great Horned Owl
 9435,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Bird,Strigidae,Strigiformes,Western Screech-Owl
 9436,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Bird,Tytonidae,Strigiformes,Barn Owl
-9437,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,,,Red Racer
-9438,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,,,California Striped Racer
-9439,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,,,Northern Desert Nightsnake
-9440,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,,,Western Red-Tailed Skink
-9441,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,,,Desert Threadsnake
-9442,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,,,Southwestern Threadsnake
+9437,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Not Available,Not Available,Red Racer
+9438,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Not Available,Not Available,California Striped Racer
+9439,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Not Available,Not Available,Northern Desert Nightsnake
+9440,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Not Available,Not Available,Western Red-Tailed Skink
+9441,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Not Available,Not Available,Desert Threadsnake
+9442,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Not Available,Not Available,Southwestern Threadsnake
 9443,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Anguidae,Squamata,San Diego Alligator Lizard
 9444,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Anniellidae,Squamata,California Legless Lizard
 9445,F5CD58FB-05DC-4074-99DA-F327A537F1BC,Reptile,Charinidae,Squamata,Rosy Boa
@@ -13860,8 +13860,8 @@ DRTO-1260,Dry Tortugas National Park,Bird,Passeriformes,Vireonidae,Vireo solitar
 13847,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Phasianidae,Galliformes,Wild Turkey
 13848,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Phasianidae,Galliformes,Ring-Necked Pheasant
 13849,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Rallidae,Gruiformes,Virginia Rail
-13850,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,,Passeriformes,House Finch
-13851,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,,Passeriformes,Purple Finch
+13850,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Not Available,Passeriformes,House Finch
+13851,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Not Available,Passeriformes,Purple Finch
 13852,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Alaudidae,Passeriformes,Horned Lark
 13853,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Bombycillidae,Passeriformes,Cedar Waxwing
 13854,E991C8BC-C203-4A09-AFD5-87380CF5C387,Bird,Calcariidae,Passeriformes,Lapland Longspur
@@ -15193,7 +15193,7 @@ DRTO-1260,Dry Tortugas National Park,Bird,Passeriformes,Vireonidae,Vireo solitar
 15180,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,Podicipedidae,Podicipediformes,Red-Necked Grebe
 15181,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,Podicipedidae,Podicipediformes,"Black-Necked Grebe, Eared Grebe"
 15182,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,Podicipedidae,Podicipediformes,Pied-Billed Grebe
-15183,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,,Strigiformes,Flammulated Owl
+15183,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,Not Available,Strigiformes,Flammulated Owl
 15184,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,Strigidae,Strigiformes,Northern Saw-Whet Owl
 15185,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,Strigidae,Strigiformes,Boreal Owl
 15186,F58C6D24-8D10-4573-9826-65D42B8B83AD,Bird,Strigidae,Strigiformes,Short-Eared Owl
@@ -15335,7 +15335,7 @@ DRTO-1260,Dry Tortugas National Park,Bird,Passeriformes,Vireonidae,Vireo solitar
 15322,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Anatidae,Anseriformes,Hooded Merganser
 15323,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Anatidae,Anseriformes,Common Merganser
 15324,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Anatidae,Anseriformes,Ruddy Duck
-15325,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,,Apodiformes,Calliope Hummingbird
+15325,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Not Available,Apodiformes,Calliope Hummingbird
 15326,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Apodidae,Apodiformes,White-Throated Swift
 15327,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Apodidae,Apodiformes,Vaux's Swift
 15328,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Apodidae,Apodiformes,Black Swift
@@ -15384,8 +15384,8 @@ DRTO-1260,Dry Tortugas National Park,Bird,Passeriformes,Vireonidae,Vireo solitar
 15371,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Rallidae,Gruiformes,American Coot
 15372,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Rallidae,Gruiformes,Sora
 15373,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Rallidae,Gruiformes,Virginia Rail
-15374,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,,Passeriformes,House Finch
-15375,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,,Passeriformes,Purple Finch
+15374,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Not Available,Passeriformes,House Finch
+15375,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Not Available,Passeriformes,Purple Finch
 15376,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Aegithalidae,Passeriformes,Bushtit
 15377,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Alaudidae,Passeriformes,Horned Lark
 15378,4324B2B4-D1A3-497F-8E6B-27171FAE4DB2,Bird,Bombycillidae,Passeriformes,Cedar Waxwing
@@ -15727,7 +15727,7 @@ DRTO-1260,Dry Tortugas National Park,Bird,Passeriformes,Vireonidae,Vireo solitar
 15714,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Phasianidae,Galliformes,Ring-Necked Pheasant
 15715,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Gaviidae,Gaviiformes,Common Loon
 15716,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Rallidae,Gruiformes,Virginia Rail
-15717,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,,Passeriformes,House Finch
+15717,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Not Available,Passeriformes,House Finch
 15718,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Aegithalidae,Passeriformes,Bushtit
 15719,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Alaudidae,Passeriformes,Horned Lark
 15720,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Bombycillidae,Passeriformes,Cedar Waxwing
@@ -15871,7 +15871,7 @@ DRTO-1260,Dry Tortugas National Park,Bird,Passeriformes,Vireonidae,Vireo solitar
 15858,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Picidae,Piciformes,Williamson's Sapsucker
 15859,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Podicipedidae,Podicipediformes,Eared Grebe
 15860,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Podicipedidae,Podicipediformes,Pied-Billed Grebe
-15861,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,,Strigiformes,Flammulated Owl
+15861,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Not Available,Strigiformes,Flammulated Owl
 15862,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Strigidae,Strigiformes,Northern Saw-Whet Owl
 15863,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Strigidae,Strigiformes,Long-Eared Owl
 15864,41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2,Bird,Strigidae,Strigiformes,Great Horned Owl
