@@ -1,11 +1,12 @@
 from flask import Flask, render_template, jsonify
 import pandas as pd
 from sqlalchemy import create_engine
+from config import username, password
 
 
 # Create app instance
 app = Flask(__name__)
-rds_connection_string = f"postgres:postgres@localhost:5432/park_db"
+rds_connection_string = f"{username}:{password}@localhost:5432/park_db"
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
 @app.route("/")
