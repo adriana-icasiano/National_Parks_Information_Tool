@@ -1,12 +1,11 @@
 from flask import Flask, render_template, jsonify
 import pandas as pd
 from sqlalchemy import create_engine
-from config import username, password
 
 
 # Create app instance
 app = Flask(__name__)
-rds_connection_string = f"{username}:{password}@localhost:5432/park_db"
+rds_connection_string = f"postgres:postgres@localhost:5432/park_db"
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
 @app.route("/")
@@ -17,12 +16,13 @@ def home():
 def park():
 
     df = pd.read_sql_query('select * from park', con=engine)
-    df["lat_lon"] = list(zip(df['latitude'], df['longitude']))
-    lat_lon = df['lat_lon'].to_list()
+    df["coordinates"] = list(zip(df['latitude'], df['longitude']))
     df1 = df.drop(labels=['latitude','longitude'], axis =1)
-    park_all = df1.to_json(orient = 'records')
+    # df2 = df[['coordinates']]
+    park_all = df1.to_dict(orient = 'records')
+    # park_coord = df2.to_json(orient = 'records')
     # lat_lon = df['lat_lon'].to_list()
-    print(jsonify(park_all))
+    print(park_all)
     return jsonify(park_all)
 
 # @app.route("/petal-avg")
