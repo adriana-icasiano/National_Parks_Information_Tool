@@ -18,7 +18,11 @@ def park():
     df = pd.read_sql_query('select * from park', con=engine)
     df["lat_lon"] = list(zip(df['latitude'], df['longitude']))
     lat_lon = df['lat_lon'].to_list()
-    return jsonify(lat_lon)
+    df1 = df.drop(labels=['latitude','longitude'], axis =1)
+    park_all = df1.to_json(orient = 'records')
+    # lat_lon = df['lat_lon'].to_list()
+    print(jsonify(park_all))
+    return jsonify(park_all)
 
 # @app.route("/petal-avg")
 # def avg_petals():
