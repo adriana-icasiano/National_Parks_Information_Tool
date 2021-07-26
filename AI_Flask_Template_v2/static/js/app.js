@@ -6,8 +6,6 @@ d3.json("/park").then(response => {
 
   let park = response;
 
-
-
   // Define arrays to hold the created city and state markers.
   var parkMarkers = [];
 
@@ -25,6 +23,45 @@ d3.json("/park").then(response => {
     );
   }
 
+  var freeMarkers = [];
+
+  for (var i = 0; i < park.length; i++) {
+    // console.log(park[i].fee);
+
+    if (park[i].fee == false) {
+      console.log(park[i].fee);
+
+      freeMarkers.push(L.circle(park[i].coordinates, {
+        stroke: false,
+        fillOpacity: 0.75,
+        color: "purple",
+        fillColor: "purple",
+        radius: 10000
+      })
+      )
+
+    }
+  }
+
+  var paidMarkers = [];
+
+  for (var i = 0; i < park.length; i++) {
+    // console.log(park[i].fee);
+
+    if (park[i].fee == true) {
+      console.log(park[i].fee);
+
+      paidMarkers.push(L.circle(park[i].coordinates, {
+        stroke: false,
+        fillOpacity: 0.75,
+        color: "dark brown",
+        fillColor: "dark brown",
+        radius: 10000
+      })
+      )
+
+    }
+  }
   var markers = L.markerClusterGroup();
 
   // Loop through the data.
@@ -38,9 +75,13 @@ d3.json("/park").then(response => {
 
     // Add a new marker to the cluster group, and bind a popup.
     markers.addLayer(L.marker(park[i].coordinates)
-    .bindPopup(`<h1>${park[i].park_name}</h1> <hr> <h4>State(s): ${park[i].states}
-    <br> Park URL: <a href= ${park[i].park_url}>Visit Park Website</a>
-   </h4>`));
+      .bindPopup(`<h1>${park[i].park_name}</h1> <hr> <h3>State(s):</h3><h4> ${park[i].states} <br>
+    <br> <h3>Park Description:</h3> ${park[i].description}
+    <br> <h3>Weather Info:</h3> ${park[i].weather_info} 
+    <br> <h3>Direction Info:</h3> ${park[i].directions_info}
+    <br> <h3>Park Designation:</h3> ${park[i].designation} 
+    <br> <h3> Directions URL: </h3> <a href= ${park[i].directions_url}>Visit Directions Website</a>
+    <br> <h3> Park URL: </h3> <a href= ${park[i].park_url}>Visit Park Website</a> </h4>`));
   };
 
   // Create the base layers.
@@ -54,18 +95,21 @@ d3.json("/park").then(response => {
 
   // Create two separate layer groups: one for the city markers and another for the state markers.
   var parks = L.layerGroup(parkMarkers);
+  var free = L.layerGroup(freeMarkers);
+  var paid = L.layerGroup(paidMarkers);
 
   // Create a baseMaps object.
   var baseMaps = {
     "Topographic Map": topo,
     "Street Map": street
-    
+
   };
 
   // Create an overlay object.
   var overlayMaps = {
     "National Parks": parks,
-
+    "Free Parks": free,
+    "Paid Parks": paid,
   };
 
 
@@ -73,7 +117,7 @@ d3.json("/park").then(response => {
   var myMap = L.map("map", {
     center: [50.00, -101.00],
     zoom: 2,
-    layers: [street, parks]
+    layers: [topo, parks]
   }).addLayer(markers);
 
   // Pass our map layers to our layer control.
@@ -81,6 +125,6 @@ d3.json("/park").then(response => {
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
-  
+
 
 });
