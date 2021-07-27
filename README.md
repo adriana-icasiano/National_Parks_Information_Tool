@@ -18,7 +18,7 @@ An interactive tool for park visitors to explore park information including acti
 3) Park visitors can get historical wildfire data including year, size and class of fire for the last 24 years.
 
 ## Data sources
-1) [National Park Services API] (https://www.nps.gov/subjects/developer/api-documentation.htm)  <br>
+1) [National Park Services API](https://www.nps.gov/subjects/developer/api-documentation.htm)  <br>
 2) [Biodiversity at National Park Database](https://www.kaggle.com/nationalparkservice/park-biodiversity)<br>
 3) [Wildfires Database](https://www.kaggle.com/rtatman/188-million-us-wildfires)<br>
  
@@ -44,21 +44,12 @@ An interactive tool for park visitors to explore park information including acti
 ## ETL Step 
 
 ### Extract
-1) Import the Video Sales by Units Sold csv file from Kaggle.com through Jupyter Notebook to get the following fields:<br>
-  a) game_name<br>
-  b) genre<br>
-  c) global_sales<br>
-  d) platform<br>
+1) Perform API calls [National Park Services API](https://www.nps.gov/subjects/developer/api-documentation.htm) to retrieve data on all national parks<br>
+  [Get API key](https://www.nps.gov/subjects/developer/get-started.htm)<br>
   
-2) Save video games data as dataframe.<br>
+2) Save wildfire sqlite database from [Wildfires Database](https://www.kaggle.com/rtatman/188-million-us-wildfires) and extract data from the Fire table<br>
 
-3) Perform API call on RAWG to get the following fields:<br>
-  a) game_id <br>
-  b) game_name<br>
-  c) release_date<br>
-  d) ratings<br>
-  e) metacritic<br>
-  f) esrb <br>
+3) Save csv for biodiversity form [Biodiversity at National Park Database](https://www.kaggle.com/nationalparkservice/park-biodiversity) <br>
   
 4) Create games ratings dataframe from the RAWG API <br>
 
