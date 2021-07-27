@@ -1,4 +1,4 @@
-// A function to determine the marker size based on the population
+// Function to determine the marker size based on the population
 function markerSize(fire_size) {
     return Math.sqrt(fire_size) * 100;
 }
@@ -50,7 +50,7 @@ var overlayMaps = {
 };
 
 // Define a map object.
-var myMap = L.map("map", {
+var myMap = L.map("size_map", {
   center: [37.09, -95.71],
   zoom: 4,
   layers: [street, fires]
