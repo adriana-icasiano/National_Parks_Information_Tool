@@ -5,7 +5,7 @@
 * [Technologies](#technologies)
 * [ETL Step](#etl-step)
 * [Steps to Recreate Database](#steps-to-recreate-database)
-* [Flask](#Flask)
+* [HTML/Flask/Leaflet/D3](#HTML/Flask/Leaflet/D3)
 * [Example Queries](#example-queries)
 * [Team Roles](#team-roles)
 
@@ -90,8 +90,9 @@ An interactive tool for park visitors to explore park information including acti
 [park images data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/images_data.csv)<br>
 [park live webcam data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/webcam_data.csv)<br>
 
-## Flask
+## HTML/Flask/Leaflet/D3
 1) Created routes using Flask and SQL Alchemy to import data
+2) [...]
 
 ## Example Queries                                                        
 ## Tables:
