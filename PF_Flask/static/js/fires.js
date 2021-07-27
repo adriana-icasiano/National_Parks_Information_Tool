@@ -8,7 +8,7 @@ d3.json("/wildfires").then(response => {
   let fire = response;
 
 
-  var fireMarkers = [];
+  // var fireMarkers = [];
 
   var markers = L.markerClusterGroup();
   // Loop through the data.
@@ -39,7 +39,7 @@ var topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 });
 
 // Create two separate layer groups: one for the city markers and another for the state markers.
-var fires = L.layerGroup(fireMarkers);
+// var fires = L.layerGroup(fireMarkers);
 // var cities = L.layerGroup(cityMarkers);
 
 // Create a baseMaps object.
@@ -50,15 +50,15 @@ var baseMaps = {
 
 // Create an overlay object.
 var overlayMaps = {
-  "Fires": fires,
+
 };
 
 
 // Define a map object.
-var myMap = L.map("map", {
+var myMap = L.map("fires_map", {
   center: [37.09, -95.71],
-  zoom: 5,
-  layers: [street, fires]
+  zoom: 4,
+  layers: [street]
 });
 
 // Add our marker cluster layer to the map.
