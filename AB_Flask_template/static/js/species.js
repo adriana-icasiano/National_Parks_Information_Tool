@@ -14,53 +14,45 @@ function init() {
                 parkNames.push(park_name)
             };
         };
-        console.log(parkNames);
+        // console.log(parkNames);
 
         let dropdown1 = d3.select("#selDataset");
         parkNames.forEach(function (park) {
             dropdown1.append("option").text(park).property("value");
         });
+        
+        let category_name = ""
+        
+        d3.select("select").on("change", function (i) {
+            category_name = d3.select("#speciesDropdown").node().value;
+            // console.log(category_name);
+        });
 
-        let aniCategories = ["Amphibian", "Reptile", "Mammal", "Bird"];
-
-        parkFilter(parkNames[0]);
-        // animalCategory(aniCategories[0]);
+        parkFilter(parkNames[0], category_name);
+        // animalCategory(category_name);
 
     });
 }
 
-function parkFilter(park_name) {
+function parkFilter(park_name, category_name) {
 
     d3.json("/species").then(data => {
 
-        let result = data.filter(obj => obj.park_name === park_name);
+        let result = data.filter(obj => obj.park_name === park_name && obj.category_name === category_name);
         console.log(result);
 
     });
-
 }
 
-// function animalCategory(category_name) {
-
-//     d3.json("/species").then(data => {
-
-//         // let result = data.filter(obj => obj.park_name === park_name);
-//         let aniCategory = data.filter(obj1 => {
-
-//             return obj1.park_name === parkFilter(data) && obj1.category_name === category_name;
-//         });
-//         console.log(aniCategory);
-
-//     });
-// }
-
-function optionChanged(newPark_name) {
+function optionChanged(newCategory_name) {
 
     // Updating dropdown
-    parkFilter(newPark_name);
-    // animalCategory(newAniCategories);
-
+    let park_name = d3.select("#selDataset").node().value;
+    console.log(park_name);
+    parkFilter(park_name, newCategory_name);
 }
+
+init();
 
 // Mammals in Acadia National Park 
 // d3.json("/species").then(data => {
@@ -145,4 +137,3 @@ function optionChanged(newPark_name) {
 
 
 
-init();
