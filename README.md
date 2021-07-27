@@ -91,7 +91,7 @@ An interactive tool for park visitors to explore park information including acti
 [park live webcam data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/webcam_data.csv)<br>
 
 ## Flask
-
+1) Created routes using Flask and SQL Alchemy to import data
 
 ## Example Queries                                                        
 ## Tables:
