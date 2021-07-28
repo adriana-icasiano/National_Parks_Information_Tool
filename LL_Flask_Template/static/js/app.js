@@ -1,6 +1,6 @@
 
 
-// Need to get array of lat and lon
+// // Need to get array of lat and lon
 
 // d3.json("/park").then(response => {
 
@@ -89,11 +89,11 @@
 
 $(document).ready(function () {
   var table = $('#national_park').DataTable({
-    "scrollY": "800px",
+    "scrollY": "200",
     "scrollX": true
   });
 
-  $('a.toggle-vis').on('click', function (e) {
+$('a.toggle-vis').on('click', function (e) {
   e.preventDefault();
 
   // Get the column API object
