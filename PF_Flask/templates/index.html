@@ -33,29 +33,136 @@
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-
+<!-- Leaflet heatmap plugin-->
+<script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+<!-- Source Files-->
+<script src="../static/js/app.js"></script>
+<script src="../static/js/fires.js"></script>
+<script src="../static/js/fire_size.js"></script>
+<!-- <script src="../static/js/heatmap.js"></script>   -->
 
 
 </head>
 
 <body>
+    <div class="header">
+        <h1 class="header-title">US National Parks Information</h1>
+        <!-- <div class="header-image"></div> -->
+    </div>
 
-    Hello World!
-
-    <div id="map"></div>
+    <div>
+        <div id="map"></div>
+        <br>
+    <div class="fire-container">
+        <div class="header-fires">
+            <h2> Wild Fires Locations and Sizes </h2>
+        </div>
+        <br>
+        <div class=row>
+            <div class="col-sm-6">
+                <div id="fires_map"></div>
+            </div>
+            <div class="col-sm-6">
+                <div id="size_map"></div>
+            </div> 
+        </div>
+    </div>
     <br>
-    <div id="size_map"></div>
     <br>
-    <div id="fires_map"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="container">
+            <div>
+                <h2> Wild Fire Trend </h2>
+            </div>
+            <div class=row>
+                <div class="col-sm-12">
+                    <div id="trend"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div>
+                <h2> Biodiversity at National Parks </h2>
+            </div>
+            <div class=row>
+                <div class="col-sm-8">
+                    <div id="bio"></div>
+                </div>
+                <br>
+                <div class=row>
 
-    <!-- Leaflet heatmap plugin-->
-    <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
-    <!-- Source Files-->
-    <script src="../static/js/app.js"></script>
-    <script src="../static/js/fires.js"></script>
-    <script src="../static/js/fire_size.js"></script>
-    <!-- <script src="../static/js/heatmap.js"></script>   -->
+                    <div class="col-sm-4">
+                        <div id="dropdown"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="container">
+            <div>
+                <h2> Park Facts </h2>
+            </div>
+            <div class=row>
+                <div class="col-sm-12">
+                    <div id="data"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class='footer-div'>
+                    <label class="authors">
+                        Authors: Paul Feliciano, Alberto Gonzalez, Adriana Icasiano, Lovensky Lubin, Abayomi Olujobi
+                    </label>
+                    <br />
+                    <label class="year">July, 2021</label>
+                    <br>
+                    <label class="citation">
+                        <em>
+                            Data obtained from the 
+                            <a href="https://www.nps.gov/subjects/developer/api-documentation.htm" target="blank">
+                                National Parks API, 
+                            </a>
+                            <br>
+                            <a href="https://www.kaggle.com/nationalparkservice/park-biodiversity" target="blank">
+                                Biodiverity in National Parks Database, 
+                            </a>
+                            <br>
+                            <a href="https://www.kaggle.com/rtatman/188-million-us-wildfires"target="blank">
+                                1.88 million US Wildfires Database, 
+                            </a>
+                        </em>
+                    </label>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

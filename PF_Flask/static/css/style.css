@@ -1,23 +1,117 @@
 body {
     padding: 0;
     margin: 0;
-  }
-  
-  /* Set map, body, and html to 100% of the screen size. */
-  #map      {
-    width: 100%; 
-    height: 500px; 
-    border: 1px solid #ccc;
-  }
+}
+/* Set map, body, and html to 100% of the screen size. */
+#map      {
+  width: 90%; 
+  height: 500px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
+}
 
-  #size_map {
-    width: 800px; 
-    height: 600px; 
-    border: 1px solid #ccc;
-  }
+#size_map {
+  height: 500px;
+  width:40%;
+  border-radius: 5px;
+  position: static;
+  z-index: 0;
+  margin-right: 90px;
+  box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
+  float: right;
+}
 
-  #fires_map {
-    width: 800px; 
-    height: 600px; 
-    border: 1px solid #ccc;
-  }
+#fires_map {
+  height: 500px;
+  width:40%;
+  border-radius: 5px;
+  position: static;
+  z-index: 0;
+  margin-left: 90px;
+  box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
+  float: left;
+}
+
+#fires-header {
+  float: left;
+}
+
+#sizes-header {
+  float: right;
+}
+
+.header {
+  text-align: center;
+}
+
+.header-fires {
+  text-align: center;
+}
+
+/* .header-image {
+  background-image: url("../../../Flask_test -Map Filter/static/images/background-image.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  opacity: .5;
+  position:absolute;
+  height:100vh;
+  position: absolute;
+  z-index:2
+} */
+
+#trend{
+  height: 500px;
+  width:800px;
+  margin-left: 90px;
+  box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
+}
+
+#bio{
+  height: 500px;
+  width:800px;
+  margin-left: 90px;
+  box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
+}
+
+#dropdown{
+  height: 500px;
+  width: 1200px;
+  margin-left: 90px;
+  box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
+}
+
+#data{
+  height: 500px;
+  width:1200px;
+  margin-left: 90px;
+  box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
+}
+
+.footer{
+  height:150px;
+  width:100%;
+  position:relative;
+  background-color: #f1f1f1;
+}
+
+.footer-div {
+  height:100%;
+  text-align:center;
+}
+
+.authors {
+  padding-top: 15px;
+}
+
+.container{
+  padding-top: 35px;
+  padding-bottom: 25px;
+  margin: auto;
+}
+
+h2 {
+  margin-left: 90px;
+}

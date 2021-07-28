@@ -22,8 +22,10 @@ d3.json("/wildfires").then(response => {
 
     // Add a new marker to the cluster group, and bind a popup.
     markers.addLayer(L.marker(fire[i].lat_lon)
-    .bindPopup(`<h1>${fire[i].park_name}</h1> <hr> <h3>Fire cause: ${fire[i].cause_description}</h3>
-    <hr> <h3>Fire size: ${fire[i].fire_size}</h3> <hr> <h3>Fire class: ${fire[i].fire_size_class}</h3>`));
+    .bindPopup(`<h1>${fire[i].park_name}</h1> <hr> <h3>State: ${fire[i].state}</h3>
+    <hr> <h3>Fire cause: ${fire[i].cause_description}</h3>
+    <hr> <h3>Fire size: ${fire[i].fire_size}</h3> 
+    <hr> <h3>Fire class: ${fire[i].fire_size_class}</h3>`));
   }
 
 };
