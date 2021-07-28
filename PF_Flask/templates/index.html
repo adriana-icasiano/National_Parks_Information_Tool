@@ -39,17 +39,26 @@
 </head>
 
 <body>
-
-    Hello World!
+<h1>US National Parks Information</h1>
 
     <div id="map"></div>
     <br>
-    <div id="size_map"></div>
-    <br>
-    <div id="fires_map"></div>
+    <div class="map-container">
+        <h2>Park Fires by Size</h2>
+        <div class="row justify-content-between">
+            <div class="col-sm-6">
+                <div id="size_map"></div>
+            </div>
+            <h2>Park Fires</h2>
+                <div class="col-sm-6">
+                <div id="fires_map"></div>
+            </div> 
+        </div>
+    </div>
 
     <!-- Leaflet heatmap plugin-->
     <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+
     <!-- Source Files-->
     <script src="../static/js/app.js"></script>
     <script src="../static/js/fires.js"></script>
