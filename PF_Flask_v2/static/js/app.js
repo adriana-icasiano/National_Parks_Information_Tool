@@ -112,8 +112,8 @@ function init() {
 
     // Define a map object.
     var myMap = L.map("map", {
-      center: [37.09, -95.71],
-      zoom: 4,
+      center: [36.78, -119.42],
+      zoom: 2,
       layers: [topo, parks]
     }).addLayer(markers);
 
