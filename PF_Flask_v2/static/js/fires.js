@@ -58,8 +58,8 @@ var overlayMaps = {
 
 // Define a map object.
 var myMap = L.map("fires_map", {
-  center: [37.09, -95.71],
-  zoom: 4,
+  center: [39.32, -111.09],
+  zoom: 3,
   layers: [street]
 });
 

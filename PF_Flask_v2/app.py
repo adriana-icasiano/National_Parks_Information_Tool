@@ -15,13 +15,15 @@ def home():
 @app.route("/park")
 def park():
 
-    df = pd.read_sql_query('select * from park', con=engine)
+    df = pd.read_sql_query('''SELECT p.* , p.park_name, f.fee
+                            FROM fees as f
+                            JOIN park_fee as pf
+                            ON f.fee_id = pf.fee_id
+                            RIGHT JOIN park as p
+                            ON p.park_id = pf.park_id''', con=engine)
     df["coordinates"] = list(zip(df['latitude'], df['longitude']))
     df1 = df.drop(labels=['latitude','longitude'], axis =1)
-    # df2 = df[['coordinates']]
     park_all = df1.to_dict(orient = 'records')
-    # park_coord = df2.to_json(orient = 'records')
-    # lat_lon = df['lat_lon'].to_list()
     print(park_all)
     return jsonify(park_all)
 

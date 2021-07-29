@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #75BB8B;
 }
 /* Set map, body, and html to 100% of the screen size. */
 #map      {
@@ -14,24 +15,26 @@ body {
 
 #size_map {
   height: 500px;
-  width:40%;
-  border-radius: 5px;
+  width:100%;
+  border-radius: 10px;
   position: static;
   z-index: 0;
-  margin-right: 90px;
+  margin-right: 10px;
+  margin-left: 10px;
   box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
-  float: right;
+  /* float: right; */
 }
 
 #fires_map {
   height: 500px;
-  width:40%;
-  border-radius: 5px;
+  width:100%;
+  border-radius: 10px;
   position: static;
   z-index: 0;
-  margin-left: 90px;
+  margin-right: 10px;
+  margin-left: 10px;
   box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
-  float: left;
+  /* float: left; */
 }
 
 #fires-header {
@@ -41,6 +44,11 @@ body {
 #sizes-header {
   float: right;
 }
+
+/* .gridContainer {
+  background-image:url("../../../Flask_test -Map Filter/static/images/background-image.jpeg");
+  width:100%;
+} */
 
 .header {
   text-align: center;
@@ -83,12 +91,12 @@ body {
   box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
 }
 
-#data{
+/* #data{
   height: 500px;
   width:1200px;
   margin-left: 90px;
   box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
-}
+} */
 
 .footer{
   height:150px;
@@ -114,4 +122,20 @@ body {
 
 h2 {
   margin-left: 90px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(23, 58, 31); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
