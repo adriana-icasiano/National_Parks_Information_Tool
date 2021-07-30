@@ -51,6 +51,7 @@
   <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
   <!-- Source Files-->
   <script src="../static/js/app.js"></script>
+  <script src="../static/js/park.js"></script>
   <script src="../static/js/fires.js"></script>
   <script src="../static/js/fire_size.js"></script>
   <script src="../static/js/table.js"></script>
@@ -12907,7 +12908,7 @@
         </div>
         <div class=row>
           <div class="col-sm-12">
-            <div id="trend"></div>
+            <div id="lineplotDiv"></div>
           </div>
 
         </div>
@@ -12924,7 +12925,6 @@
           <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1"
             data-bs-toggle="dropdown" aria-expanded="false">
             <h3> Choose a park activity</h3>
-            <!-- <div class="dropdown1"> -->
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </button>
 

@@ -108,10 +108,10 @@ body {
   z-index:2
 } */
 
-#trend{
-  height: 500px;
-  width:800px;
-  margin-left: 90px;
+#lineplotDiv{
+  height: 700px;
+  width:700px;
+  margin-left: 300px;
   box-shadow: rgba(0,0,0,.15) 0px 0px 4px 4px;
 }
 

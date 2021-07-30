@@ -102,7 +102,7 @@ function buildCharts(sample) {
             orientation: "h",
             text: response[2].reverse(),
             marker: {
-              color: 'rgb(0,0,0)'
+              color: 'rgb(0,100,0)'
             }
           };
           

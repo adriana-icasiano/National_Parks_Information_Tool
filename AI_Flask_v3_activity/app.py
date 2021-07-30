@@ -1,11 +1,11 @@
 from flask import Flask, render_template, jsonify
 import pandas as pd
 from sqlalchemy import create_engine
-
+from config import username, password
 
 # Create app instance
 app = Flask(__name__)
-rds_connection_string = f"postgres:postgres@localhost:5432/park_db" # Remember to put passwork in config file
+rds_connection_string = f"{username}:{password}@localhost:5432/park_db" # Remember to put passwork in config file
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
 @app.route("/")
@@ -81,6 +81,16 @@ def activity_count():
         'counts':counts_converted,
     }
     return jsonify(list_act_count)
+
+@app.route("/fireclass")
+def fireclass():
+    fire = pd.read_sql_query('select * from fire', con=engine)
+    fire_by_year = fire.groupby(['fire_size_class', 'fire_year']).count()
+    fire_by_year = fire_by_year.reset_index()
+    fire_by_year = fire_by_year.groupby('fire_size_class').agg({'fire_year': list, 'fire_id': list})
+    fire_classes = fire_by_year.to_dict(orient = 'records')
+    print(fire_classes)
+    return jsonify(fire_classes)
 
 
 # @app.route("/petal-species/<species>")
