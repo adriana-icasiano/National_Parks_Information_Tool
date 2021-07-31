@@ -63,10 +63,12 @@
 </head>
 
 <body>
-  <!-- The video -->
-  <video autoplay muted loop id="myVideo">
-    <source src="../static/video/trees.mp4" type="video/mp4">
-  </video>
+  <div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+      <source src="static/video/trees.mp4" type="video/mp4">
+    </video>
+  </div>
+
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <script>
@@ -94,7 +96,7 @@
 
   <div class="map-container"></div>
   <div class="header">
-    <h1 class="animate__animated animate__flipInX">US National Parks Information</h1>
+    <h1 class="animate__animated animate__flipInX" style="color: white;">US National Parks Information</h1>
     <!-- <div class="header-image"></div> -->
   </div>
 
