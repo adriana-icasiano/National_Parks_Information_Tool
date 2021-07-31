@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>United States National Park Information Database</title>
 
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -61,6 +63,10 @@
 </head>
 
 <body>
+  <!-- The video -->
+  <video autoplay muted loop id="myVideo">
+    <source src="../static/video/trees.mp4" type="video/mp4">
+  </video>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <script>
@@ -85,10 +91,10 @@
     }
   </script>
 
+
+  <div class="map-container"></div>
   <div class="header">
-    <div class="p-3 mb-2 text-white">
-      <h1 class="header-title">US National Parks Information</h1>
-    </div>
+    <h1 class="animate__animated animate__flipInX">US National Parks Information</h1>
     <!-- <div class="header-image"></div> -->
   </div>
 
@@ -12958,7 +12964,7 @@
         </div>
       </div>
     </div>
-<br>
+    <br>
     <footer>
       <div class="footer">
         <div class='footer-div'>
