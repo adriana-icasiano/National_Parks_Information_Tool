@@ -20,6 +20,7 @@ function init() {
         parkNames.forEach(function (park) {
             newDropdown.append("option").text(park).property("value");
         });
+        buildChart(parkNames[0]);
     });
 }
 
