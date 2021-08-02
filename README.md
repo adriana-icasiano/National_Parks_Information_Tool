@@ -6,7 +6,7 @@
 * [Technologies](#technologies)
 * [ETL Step](#etl-step)
 * [Steps to Recreate Database](#steps-to-recreate-database)
-* [HTML/Flask/Leaflet/D3](#HTML,-Flask,-Leaflet,-D3)
+* [Full Stack Flow](#Full-Stack-Flow)
 * [Example Queries](#example-queries)
 * [Team Roles](#team-roles)
 
@@ -91,13 +91,15 @@ An interactive tool for park visitors to explore park information including acti
 [park images data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/images_data.csv)<br>
 [park live webcam data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/webcam_data.csv)<br>
 
-## HTML, Flask, Leaflet, D3<br>
+## Full Stack Flow<br>
 In addition to the Home route within Flask we have created 5 other routes, the below describes the routes and the associated javscript files:<br>
 1.) "/park" -->	park.js<br>
 2.) "/wildfires" -->	fires.js, fire_size.js<br>
 3.) "/activity" -->	activity.js<br>
 4.) "/activity_count" -->	activity.js<br>
 5.) "/fireclass" -->	app.js<br>
+
+Flask then renderes to the Index.html file.
 
 ## Example Queries                                                        
 ## Tables:
