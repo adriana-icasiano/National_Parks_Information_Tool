@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/78628287/127789862-bb829833-5b35-423a-a2c9-1281262e3514.png)
 
 ## Table of Contents ##
 * [Project Proposal](#project-proposal)
