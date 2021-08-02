@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 
 # Create app instance
 app = Flask(__name__)
-rds_connection_string = f"postgres:postgres@localhost:5432/park_db" # Remember to put passwork in config file
+rds_connection_string = f"postgres:4lll0v3@localhost:5432/park_db" # Remember to put passwork in config file
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
 @app.route("/")
@@ -92,7 +92,20 @@ def fireclass():
     print(fire_classes)
     return jsonify(fire_classes)
 
+@app.route("/species")
+def species():
 
+    species_df = pd.read_sql_query("""SELECT p.park_name, p.park_id, 
+    ps.category_name, ps.family, ps.order, ps.common_names, s.sci_name 
+    FROM park_species AS ps
+    INNER JOIN park as p
+    ON ps.park_id = p.park_id
+    LEFT OUTER JOIN sci_name as s
+    ON s.sci_name_id = ps.sci_name_id;""", con=engine)
+
+    species_json = species_df.to_dict(orient="records")
+    # print(species_json)
+    return jsonify(species_json)
 # @app.route("/petal-species/<species>")
 # def petals_species(species):
 
