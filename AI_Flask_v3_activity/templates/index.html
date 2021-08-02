@@ -57,6 +57,8 @@
   <script src="../static/js/fires.js"></script>
   <script src="../static/js/fire_size.js"></script>
   <script src="../static/js/table.js"></script>
+  <script src="../static/js/species.js"></script>
+  <script src="../static/js/counts.js"></script>
   <script src="../static/js/activity.js"></script>
 
 
@@ -12893,6 +12895,14 @@
           <div class="p-3 mb-2 text-white">
             <h2> Biodiversity at National Parks </h2>
           </div>
+          <div class="row">
+            <div class="col-md-12">
+
+              <h6>Number of Species Per Park</h6>
+              <select id="selParkCount" onchange="parkChanged(this.value)"></select>
+              <div id="myChart"></div>
+            </div>
+          </div>
         </div>
         <div class=row>
           <div class="col-sm-8">
@@ -13000,7 +13010,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
+    <!-- <script src="https://d3js.org/d3-array.v2.min.js"></script> -->
 
+
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/item-series.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <!-- <script type='text/javascript'>
         window.onload = function () {
             const thead = document.querySelectorAll('.table > thead');
