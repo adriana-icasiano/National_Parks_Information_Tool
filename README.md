@@ -6,7 +6,7 @@
 * [Technologies](#technologies)
 * [ETL Step](#etl-step)
 * [Steps to Recreate Database](#steps-to-recreate-database)
-* [HTML/Flask/Leaflet/D3](#HTML/Flask/Leaflet/D3)
+* [HTML/Flask/Leaflet/D3](#HTML-/Flask-/Leaflet-/D3)
 * [Example Queries](#example-queries)
 * [Team Roles](#team-roles)
 
