@@ -92,12 +92,12 @@ An interactive tool for park visitors to explore park information including acti
 [park live webcam data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/webcam_data.csv)<br>
 
 ## HTML/Flask/Leaflet/D3<br>
-In addition to the Home route within Flask we have created 5 other routes, the below describes the routes and the associated javscript files:
-1.) "/park" -->	park.js
-2.) "/wildfires" -->	fires.js, fire_size.js
-3.) "/activity" -->	activity.js
-4.) "/activity_count" -->	activity.js
-5.) "/fireclass" -->	app.js
+In addition to the Home route within Flask we have created 5 other routes, the below describes the routes and the associated javscript files:<br>
+1.) "/park" -->	park.js<br>
+2.) "/wildfires" -->	fires.js, fire_size.js<br>
+3.) "/activity" -->	activity.js<br>
+4.) "/activity_count" -->	activity.js<br>
+5.) "/fireclass" -->	app.js<br>
 
 ## Example Queries                                                        
 ## Tables:
