@@ -111,16 +111,5 @@ def fireclass():
     return jsonify(fire_classes)
 
 
-# @app.route("/petal-species/<species>")
-# def petals_species(species):
-
-#     df = pd.read_sql(f""" SELECT PetalLengthCm, Species 
-#                         FROM Iris
-#                         WHERE Species = '{species}'; """, engine)
-#     petal_lengths = df.PetalLengthCm.to_list()
-#     return jsonify(petal_lengths)
-
-
-
 if __name__ == "__main__":
     app.run(debug=True)
