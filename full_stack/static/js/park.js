@@ -1,14 +1,13 @@
 function init() {
   d3.json("/park").then(response => {
 
-    console.log(response);
-
+    // Set variable for response
     let park = response;
 
-    // Define arrays to hold the created city and state markers.
+    // Define arrays to hold the park markers.
     var parkMarkers = [];
 
-    // Loop through locations, and create the city and state markers.
+    // Loop through park data, and create the park markers.
     for (var i = 0; i < park.length; i++) {
       // Setting the marker radius for the state by passing population into the markerSize function
       parkMarkers.push(
@@ -22,13 +21,14 @@ function init() {
       );
     }
 
+    // Set variable for markers for free parks
     var freeMarkers = [];
 
+    // Loop through park data and add free parks to markers list
     for (var i = 0; i < park.length; i++) {
-      // console.log(park[i].fee);
 
+      // Filter for parks where fee is false
       if (park[i].fee == false) {
-        console.log(park[i].fee);
 
         freeMarkers.push(L.circle(park[i].coordinates, {
           stroke: false,
@@ -42,11 +42,13 @@ function init() {
       }
     }
 
+    // Set variable for markers for parks that require entrance fee
     var paidMarkers = [];
 
+    // Loop through the data and add parks that require fee to the paid markers list
     for (var i = 0; i < park.length; i++) {
-      // console.log(park[i].fee);
 
+      // Filter for where fee equals tree
       if (park[i].fee == true) {
         console.log(park[i].fee);
 
@@ -61,9 +63,11 @@ function init() {
 
       }
     }
+
+    // Set variable for the marker cluster group
     var markers = L.markerClusterGroup();
 
-    // Loop through the data.
+    // Loop through the data
     for (var i = 0; i < park.length; i++) {
 
       // Add a new marker to the cluster group, and bind a popup.
@@ -81,16 +85,17 @@ function init() {
     }));
     };
 
-    // Create the base layers.
+    // Create the base layers, street layer
     var street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
 
+    // Create topographical layer
     var topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
     });
 
-    // Create two separate layer groups: one for the city markers and another for the state markers.
+    // Create three separate layer groups: one for all parks markers, free park markers and paid park markers.
     var parks = L.layerGroup(parkMarkers);
     var free = L.layerGroup(freeMarkers);
     var paid = L.layerGroup(paidMarkers);
