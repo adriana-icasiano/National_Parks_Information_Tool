@@ -80,7 +80,7 @@ An interactive tool for park visitors to explore park information including acti
 2) Access the park tables from the [Resources folder](https://github.com/adriana-icasiano/yogi_booboo_playground/tree/main/Resources):<br>
 3) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
 4) Import the data into the table in this order:<br>
-[park data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/nps_park_data2.csv) <br> 
+[park data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/nps_park_data_final.csv) <br> 
 [activity data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/activities_data.csv)<br>
 [park activity data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/park_activities_data.csv)<br>
 [fee data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/fee_id_data.csv)<br> 
