@@ -71,7 +71,7 @@ An interactive tool for park visitors to explore park information including acti
   
 ### Load<br>
 1) Create database called park_db
-2) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/QuickDBD-Free%20Diagram%20(23).sql)<br>
+2) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
 3) Load csv files manually into Postgres database <br>
 
 ## Steps to recreate database
