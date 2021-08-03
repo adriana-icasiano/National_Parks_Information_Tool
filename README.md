@@ -40,7 +40,8 @@ An interactive tool for park visitors to explore park information including acti
   - requests 
   - d3
   - Leafleat
-  
+ 
+ The project is created using webscraping, Leaflet and plotly.<br>
 ## Entity Relational Database (ERD) design 
 ![](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_diagram.png)
 
