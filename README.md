@@ -35,6 +35,7 @@ An interactive tool for park visitors to explore park information including acti
 * Bootstrap
 * Libraries
   - Highchart
+  - [DataTables](https://www.datatables.net/examples/basic_init/scroll_xy.html)
   - json
   - requests 
   - d3
@@ -53,8 +54,6 @@ An interactive tool for park visitors to explore park information including acti
 
 3) Save csv for biodiversity form [Biodiversity at National Park Database](https://www.kaggle.com/nationalparkservice/park-biodiversity) <br>
   
-4) Create games ratings dataframe from the RAWG API <br>
-
 ### Transform <br>
 1) Exploratory Data Analysis - Sort data for analysis <br>
 2) Data Cleaning - drop duplicates, rename columns, flatten nested json data <br>
@@ -72,9 +71,14 @@ An interactive tool for park visitors to explore park information including acti
 ### Load<br>
 1) Create database called park_db
 2) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
-3) Load csv files manually into Postgres database <br>
+3) Load csv files into Postgres database<br>
 
 ## Steps to recreate database
+### Import to Postgres using provided notebook<br>
+1) Create config.py file with postgres username, password <br>
+2) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
+3) Run [import_csvs_to_db.ipynb](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/import_csvs_to_db.ipynb) file<br>
+
 ### Manual data import to Postgres<br>
 1) Create config.py file with postgres username, password <br>
 2) Access the park tables from the [Resources folder](https://github.com/adriana-icasiano/yogi_booboo_playground/tree/main/Resources):<br>
