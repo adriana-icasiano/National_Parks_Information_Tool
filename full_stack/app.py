@@ -9,11 +9,13 @@ rds_connection_string = f"postgres:postgres@localhost:5432/park_db" # Remember t
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
 
+# Create home route
 @app.route("/")
 def home():
     return render_template("index.html")
 
 
+# Create species route
 @app.route("/species")
 def species():
 
@@ -26,10 +28,10 @@ def species():
     ON s.sci_name_id = ps.sci_name_id;""", con=engine)
 
     species_json = species_df.to_dict(orient="records")
-    # print(species_json)
     return jsonify(species_json)
 
-    
+
+# Create park route
 @app.route("/park")
 def park():
 
@@ -42,9 +44,10 @@ def park():
     df["coordinates"] = list(zip(df['latitude'], df['longitude']))
     df1 = df.drop(labels=['latitude','longitude'], axis =1)
     park_all = df1.to_dict(orient = 'records')
-    # print(park_all)
     return jsonify(park_all)
 
+
+# Create wildfires route
 @app.route("/wildfires")
 def wildfires():
 
@@ -52,9 +55,10 @@ def wildfires():
     df["lat_lon"] = list(zip(df['latitude'], df['longitude']))
     df1 = df.drop(labels=['latitude','longitude'], axis =1)
     all_fires = df1.to_dict(orient = 'records')
-    # print(all_fires)
     return jsonify(all_fires)
 
+
+# Create acitivity route
 @app.route("/activity")
 def activity():
 
@@ -71,9 +75,10 @@ def activity():
         name = df_act.loc[df_act['activity_name'] == activity]['park_name'].values.tolist()
         dict_of_act = {"activity":activity, "park_name":name}
         list_of_act.append(dict_of_act)
-    # print(list_of_act)
     return jsonify(list_of_act)
 
+
+# Create activity count route
 @app.route("/activity_count")
 def activity_count():
 
@@ -100,6 +105,8 @@ def activity_count():
     }
     return jsonify(list_act_count)
 
+
+# Create fire class route
 @app.route("/fireclass")
 def fireclass():
     fire = pd.read_sql_query('select * from fire', con=engine)
@@ -107,7 +114,6 @@ def fireclass():
     fire_by_year = fire_by_year.reset_index()
     fire_by_year = fire_by_year.groupby('fire_size_class').agg({'fire_year': list, 'fire_id': list})
     fire_classes = fire_by_year.to_dict(orient = 'records')
-    print(fire_classes)
     return jsonify(fire_classes)
 
 
