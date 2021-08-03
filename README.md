@@ -146,11 +146,11 @@ on ps.park_id = p.park_id
                                                         
 #### Team Roles
 
-| Team Member           | Role                          | Github username |        
-| -----------           | -----------                   | -----------
-| Adriana Icasiano      | Park Ranger                   | adriana-icasiano |
-| Paul Feliciano        | El Rey de Fogo                | pfeliciano1      |
-| Alberto Gonzalez      | El Rey de Fogo                | dalismo          |
-| Abayomi Olujobi       | Highchart Creator             | bay0624          |
-| Lovensky Lubin        | Trend Setter                  | Lubinl           |
+| Team Member           | Role                                | Github username |        
+| -----------           | -----------                         | -----------
+| Adriana Icasiano      | Park Ranger                         | adriana-icasiano |
+| Paul Feliciano        | El Rey de Fogo                      | pfeliciano1      |
+| Alberto Gonzalez      | El Rey de Fogo                      | dalismo          |
+| Abayomi Olujobi       | Highchart Creator & Taxonomist      | bay0624          |
+| Lovensky Lubin        | Trend Setter and Search Bar Owner   | Lubinl           |
 
