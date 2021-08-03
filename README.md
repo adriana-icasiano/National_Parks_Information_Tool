@@ -74,12 +74,12 @@ An interactive tool for park visitors to explore park information including acti
 3) Load csv files into Postgres database<br>
 
 ## Steps to recreate database
-### Import to Postgres using provided notebook<br>
+### Option 1 - Import to Postgres using provided notebook<br>
 1) Create config.py file with postgres username, password <br>
 2) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
 3) Run [import_csvs_to_db.ipynb](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/import_csvs_to_db.ipynb) file<br>
 
-### Manual data import to Postgres<br>
+### Option 2 - Manual data import to Postgres<br>
 1) Create config.py file with postgres username, password <br>
 2) Access the park tables from the [Resources folder](https://github.com/adriana-icasiano/yogi_booboo_playground/tree/main/Resources):<br>
 3) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
