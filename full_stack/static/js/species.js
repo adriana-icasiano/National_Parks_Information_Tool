@@ -69,7 +69,7 @@ function parkFilter(park_name, category_name, order_name) {
             ordr = d3.select("#orderDropdown").node().value;
         }
 
-        console.log(park_name, category_name, ordr);
+        // console.log(park_name, category_name, ordr);
         let result_data = data.filter(obj => obj.park_name === park_name
             && obj.category_name === category_name && obj.order === ordr);
 
@@ -84,7 +84,7 @@ function parkFilter(park_name, category_name, order_name) {
             delete v.park_id;
             delete v.order;
         });
-        console.log(myObj);
+        // console.log(myObj);
 
         createTable (myObj, ["family", "common_names", "sci_name"]);
 
@@ -139,9 +139,9 @@ function speciesChanged(newCategory_name) {
 
     // Updating dropdown
     let park_name = d3.select("#selDataset").node().value;
-    console.log(park_name);
+    // console.log(park_name);
     parkFilter(park_name, newCategory_name, "");
-    console.log(newCategory_name);
+    // console.log(newCategory_name);
 
 }
 
