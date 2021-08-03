@@ -101,7 +101,8 @@ In addition to the Home route within Flask we have created 5 other routes, the b
 2.) "/wildfires" -->	fires.js, fire_size.js<br>
 3.) "/activity" -->	activity.js<br>
 4.) "/activity_count" -->	activity.js<br>
-5.) "/fireclass" -->	app.js<br>
+5.) "/fireclass" -->	fireclass.js<br>
+6.) "/species" -->	species.js, counts.js<br>
 
 Flask then renders to the Index.html file.
 
