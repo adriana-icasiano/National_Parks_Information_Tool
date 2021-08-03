@@ -14,7 +14,7 @@ function init() {
                 parkNames.push(park_name)
             };
         };
-        console.log(parkNames);
+        // console.log(parkNames);
 
         let newDropdown = d3.select("#selParkCount");
         parkNames.forEach(function (park) {
@@ -29,7 +29,7 @@ function buildChart(park_name) {
     d3.json("/species").then(data => {
 
     let resultPark = data.filter(obj => obj.park_name === park_name);
-    console.log(resultPark);
+    // console.log(resultPark);
 
     // Get Species Count by Park
     let res = resultPark.reduce(function (obj, v) {
@@ -37,7 +37,7 @@ function buildChart(park_name) {
         obj[v.category_name] = (obj[v.category_name] || 0) + 1;
         return obj;
     }, {})
-    console.log(res);
+    // console.log(res);
 
     // Building Chart
     Highcharts.chart("myChart", {
