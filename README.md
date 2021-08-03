@@ -41,7 +41,7 @@ An interactive tool for park visitors to explore park information including acti
   - Leafleat
   
 ## Entity Relational Database (ERD) design 
-![](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/QuickDBD-Free%20Diagram%20(10).png)
+![](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_diagram.png)
 
 ## ETL Step 
 
