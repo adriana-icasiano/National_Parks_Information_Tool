@@ -76,13 +76,13 @@ An interactive tool for park visitors to explore park information including acti
 ## Steps to recreate database
 ### Option 1 - Import to Postgres using provided notebook<br>
 1) Create config.py file with postgres username, password <br>
-2) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
+2) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql) The database should be named "park_db"<br>
 3) Run [import_csvs_to_db.ipynb](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/import_csvs_to_db.ipynb) file<br>
 
 ### Option 2 - Manual data import to Postgres<br>
 1) Create config.py file with postgres username, password <br>
 2) Access the park tables from the [Resources folder](https://github.com/adriana-icasiano/yogi_booboo_playground/tree/main/Resources):<br>
-3) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql)<br>
+3) [Create tables using the schema file](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/ERD/erd_schema.sql) The database should be named "park_db"<br>
 4) Import the data into the table in this order:<br>
 [park data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/nps_park_data_final.csv) <br> 
 [activity data](https://github.com/adriana-icasiano/yogi_booboo_playground/blob/main/Resources/activities_data.csv)<br>
